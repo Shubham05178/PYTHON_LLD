@@ -12,4 +12,3 @@ class UserRepo:
             print(user.get_user_info())
         
 
-    

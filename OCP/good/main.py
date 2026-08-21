@@ -1,4 +1,6 @@
 from paymentmethod import CreditCardPayment,BitcoinPayment
-CreditCardPayment().pay(100)
+from amountprocessor import AmountProcessor
+c1=CreditCardPayment()
+AmountProcessor(c1).pay(100)
 
-BitcoinPayment().pay(200)
+AmountProcessor(BitcoinPayment()).pay(200)
